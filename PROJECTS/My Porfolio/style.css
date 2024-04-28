@@ -1,0 +1,214 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000021;
+    color: #fff;
+    font-family: "Poppins", sans-serif;;
+}
+
+nav{
+    background-color: rgb(18, 18, 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 22px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: #9494d7;
+    font-size: 1.01rem;
+    cursor: pointer;
+}
+
+main hr{
+    border: 0;
+    height: 1.1px;
+    background-color: #755098;
+    margin: 43px 82px;
+}
+
+
+.left{
+    font-size: 1.5rem;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+    align-items: center;
+}
+
+.firstSection > div{
+    width: 30%;
+}
+
+.leftSection{
+    font-size: 2.1rem;
+
+}
+
+.leftSection .buttons{
+    padding: 35px 0;
+}
+
+.leftSection .btn{
+    background-color: #1e2167;
+    color: #fff;
+    border: 2px solid white;
+    padding: 12px 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.leftSection .btn:hover{
+    background-color: #1c1cbf;
+}
+
+.rightSection img{
+   width: 80%;
+    margin: 30px 0;
+  
+}
+
+.purple{
+    color: #a762e8;
+}
+
+.text-gray{
+    color: gray;
+}
+
+
+#element{
+    color: #a762e8;
+
+}
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1{
+    font-size: 1.8rem;
+}
+
+.secondSection .box {
+    background: #fff;
+    height: 1.7px;
+    width: 80vw;
+    margin: 50px 0;
+    display: flex;
+}
+
+.secondSection .verticle{
+    height: 92px;
+    width: 1px;
+    background: #fff;
+    margin: 0 100px;
+}
+
+.image-top{
+    width: 50px;
+    position: relative;
+    top: -53px;
+    left: -13px;
+}
+
+.verticle-title{
+    position: relative;
+    top: 66px;
+    width: 150px;
+    font-size: 14px;
+}
+
+
+.vertcle-desc{
+    width: 150px;
+    position: relative;
+    top: 87px;
+    color: gray;
+    font-size: 10px;
+}
+
+footer{
+    background-color: #0e0e1a;
+    /* height: 230px; */
+}
+
+.footer{
+    display: flex;
+    padding: 23px 110px;
+    justify-content: space-evenly;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer > div{
+    width: 212px;
+}
+
+.text-center{
+    color: gray;
+    text-align: center;
+    padding: 12px 0;
+}
+
+@media screen and (max-width: 2000px) {
+
+    body{
+        /* background-color: red; */
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .secondSection .verticle{
+        height: unset;
+    }
+
+    .verticle-title .vertcle-desc{
+        left: 45px;
+    }
+
+    .image-top{
+        width: 20px;
+        left: -25px;
+    }
+    footer{
+        display: none;
+    }
+
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+  
+}

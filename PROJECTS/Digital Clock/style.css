@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://media.istockphoto.com/id/974283112/photo/long-exposure.jpg?s=612x612&w=0&k=20&c=HWjXFwdV3wmB5CLj1BqzTVl2sHNH9fT4jKoHgEyaHI8=") no-repeat;
+    background-size: cover;
+
+}
+
+.clock{
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),0px 10px 20px rgba(0, 0, 0, 0.7) ;
+    height: 24vh;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.clock span{
+    position: relative;
+    top: -14%;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:260px) {
+    .clock{
+        max-width: 200px;
+        padding: 3px;
+    }
+
+    .clock h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width:260px) and (max-width:400px) {
+    .clock{
+        max-width: 250px;
+        padding: 5px;
+    }
+
+    .clock h1{
+        font-size: 2.5rem;
+    }
+}
